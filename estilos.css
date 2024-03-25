@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: slategray;
+    height: 80px;
+    font-size: 23px;
+    padding: 20px;
+    color: #fff;
+}
+.logo{
+    float: left;
+    font-weight: bold;
+}
+
+span{
+    color: #333;
+}
+
+.barra{
+    float: right;
+}
+
+.barra ul li{
+    list-style: none;
+    display: inline-block;
+    
+}
+
+.barra a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.barra a:hover{
+    color: #333;
+}
+
+main{
+    height: calc(100vh - 80px);
+    width: 100%;
+    background-image: url(imagenes/nikeBG.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.call{
+    color: #fff;
+    width: 60%;
+    border: 5px solid slategray;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    float: right;
+    margin: 30px;
+}
+
+h1{
+    color: slategray;
+    margin-bottom: 20px;
+
+}
+.call p{
+    margin-bottom: 20px;
+}
+
+.call a{
+    background-color: slategray;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+
+}
+.call a:hover{
+    background-color: #333;
+}
+
+h2{
+    text-align: center;
+    background-color: slategray;
+    text-transform: uppercase;
+    padding: 20px;
+
+}
+
+.sec{
+    height: 700px;
+    width: 100%;
+    background-color: #333;
+}
+
+footer{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+footer p{
+    margin-bottom: 20px;
+
+}
+
+footer .redes a{
+    color: slategray;
+    font-size: 30px;
+    letter-spacing: 20px;
+
+}
+
+.subir{
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: slategray;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #fff;
+}
+
+
+/* CONTACTO */
+
+.containerForm{
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+}
+
+.containerForm h2{
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+.containerForm p{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.containerForm a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+.containerForm a i{
+    color: orange;
+    margin-right: 10px;
+}
+.containerForm form .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+.containerForm form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+.containerForm .btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: orange;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.containerForm .btn-enviar:hover{
+    background: #e39403;
+}
+
+
+/* PRODUCTOS */
+
+.contenido{
+    max-width: 1100px;
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+}
+.mostrador{
+    width: 100%;
+    transition: .5s ease;
+}
+.mostrador .fila{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.mostrador .fila .item{
+    max-width: 210px;
+    padding: 30px;
+    height: 250px;
+    text-align: center;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s;
+
+}
+.mostrador.fila.item:hover{
+    background-color: #e6e6e6;
+}
+.mostrador .fila .item img{
+    width: 100%;
+    margin: 30px 0;
+}
+
+.mostrador .fila .item .descripcion{
+    color: 707070;
+    font-weight: bold;
+}
+.mostrador .fila .item .precio{
+    color: #f85151;
+    font-weight: bold;
+    font-size: 20px;
+}
