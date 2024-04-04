@@ -62,6 +62,16 @@ main{
     margin: 30px;
 }
 
+h5{
+    color: slategray;
+    margin-bottom: 20px;
+}
+
+p{
+    color: slategray;
+    margin-bottom: 20px;
+}
+
 h1{
     color: slategray;
     margin-bottom: 20px;
